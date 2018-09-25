@@ -30,7 +30,6 @@ def lapse_rate(fin,zname,pname,tname,high_p,low_p):
     zname: -> name of geopotential height variable
     pname: -> name of pressure level variable
     tname: -> name of temperature level variable 
-    z_c:   -> height to interpolate to
     high_p:-> height of HIGHER pressure surface (LOWER elevation) 
     low_p: -> height of LOWER pressure surface (HIGHER elevation) 
 

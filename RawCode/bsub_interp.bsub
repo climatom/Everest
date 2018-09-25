@@ -1,0 +1,8 @@
+#!/bin/bash
+#BSUB -q short-serial
+#BSUB -J Interp_job[1-48]
+#BSUB -oo Lotus_output-%J.o
+#BSUB -eo Lotus_error-%J.e 
+#BSUB -W 2:00
+#BSUB -M 10000
+bash /group_workspaces/jasmin2/ncas_generic/users/tmatthews/EVEREST/batch_interp.sh ${LSB_JOBINDEX}
